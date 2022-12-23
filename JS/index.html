@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Change HTML content</h2>
+    <p id="demo">JS can change HTML content </p>
+
+    <button onclick='document.getElementById("demo") .innerHTML = "Hello JS"'> Click me </button>
+    <div>
+    <button onclick='document.getElementById("demo") .innerHTML = "2201321066"'> Show number </button>
+    </div>
+
+    <div>
+    <button onclick='document.getElementById("demo") .innerHTML = "Hello Ico"'> Show name </button>
+    </div>
+    <button onclick="myFunction()">Try it </button>
+    <button onclick="myFunctionColorRed()">Change Color Red</button>
+    <button onclick="myFunctionColorYellow()">Change Color Yellow</button>
+    <div>
+        <p id="proba">Some text</p>
+    </div>
+    <script>
+        function myFunction(){
+            var x = document.getElementById("proba");
+            if(x.style.display==="none")
+            {
+                x.style.display="block"
+            }
+            else{
+                x.style.display = "none"
+            }
+        }
+        </script>
+
+        <script>
+             function myFunctionColorRed(){
+            var x = document.getElementById("proba");
+            x.style.backgroundColor = "red";
+        }
+            </script>
+              <script>
+                function myFunctionColorYellow(){
+               var x = document.getElementById("proba");
+               x.style.backgroundColor = "yellow";
+           }
+               </script>
+
+            <style>
+                #proba{
+                    text-align: center;
+                    width: 200px;
+                    height: 200px;
+                    background-color: blue;
+                    margin-left: 50%;
+                }
+            </style>
+</body>
+</html>
